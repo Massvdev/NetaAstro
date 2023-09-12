@@ -11,7 +11,7 @@ dependencies:
   '@astrojs/sitemap':
     specifier: ^3.0.0
     version: 3.0.0
-  '@massvdev/brutal-ui':
+  '@eliancodes/brutal-ui':
     specifier: ^0.2.2
     version: 0.2.2
   astro:
@@ -392,7 +392,7 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@massvdev/brutal-ui@0.2.2:
+  /@eliancodes/brutal-ui@0.2.2:
     resolution: {integrity: sha512-tjNfXpcrK3WjfNSHeqJ4sHqVxEJjqyAZQ7gQ5Q7W2D0gBxAVo1TM2MGiOEfEzRbOAvc5aDUoaSAJ/sqPnNyR+A==}
     dev: false
 

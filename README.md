@@ -95,7 +95,7 @@ This directory contains all layout components. For instance, the header and foot
 
 The theme has a few colors that you can use in the included components.
 
-- red
+- red2
 - blue
 - green
 - yellow

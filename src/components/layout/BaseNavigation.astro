@@ -6,6 +6,8 @@ interface Props {
 const navigationItems = [
   { name: 'Home', url: '/' },
   { name: 'Blog', url: '/blog/' },
+  { name: 'DAO', url: 'https://daodao.zone/dao/juno1c5v6jkmre5xa9vf9aas6yxewc7aqmjy0rlkkyk4d88pnwuhclyhsrhhns6' },
+  { name: 'FAQ', url: 'https://docs.netadao.zone/docs/faq/' },
 ];
 
 const socialIcons = [
@@ -19,16 +21,21 @@ const socialIcons = [
     url: 'https://twitter.com/Neta_DAO',
     icon: 'i-uil-twitter',
   },
+  {
+    name: 'Discord',
+    url: 'https://discord.netadao.zone/',
+    icon: 'i-uil-discord',
+  },
   { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
 ];
 
 const { pageTitle } = Astro.props;
 ---
 
-<header class='border-b-4 border-black flex justify-between p-6 items-center'>
+<header class='border-b-4 border-black bg-gray-900 text-gray-100 flex justify-between p-6 items-center'>
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
   <a href='/' title='Back to Home'>
-    <p class='righteous md:text-5xl'>NetaDAO</p>
+    <p class='righteous md:text-5xl'>NetaDAØ</p>
   </a>
   <nav class='hidden md:inline-block'>
     <h2 class='hidden'>Navigation</h2>

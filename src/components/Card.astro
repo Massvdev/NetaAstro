@@ -15,7 +15,7 @@ const { color } = Astro.props;
 <style define:vars={{ color: color }}>
   div.brutal-card {
     background-color: var(--color);
-    background-image: linear-gradient(var(--color), var(--color), transparent);
+    background-image: linear-gradient(var(--color), var(--color), rgba(255,0,0,0));
     border-radius: 0.5rem;
     border: 3px solid black;
     filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));

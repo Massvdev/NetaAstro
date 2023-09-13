@@ -21,6 +21,13 @@ const builtWith = [
   { name: 'Vercel', url: 'https://vercel.com' },
   { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
 ];
+
+const stakeWith = [
+  { name: 'Stake Juno', url: 'https://wallet.keplr.app/chains/juno?modal=validator&chain=juno-1&validator_address=junovaloper1f2jpv5sc6ur6yurq5w0t2chphrznpy8lfvj9vs' },
+  { name: 'Stake AKT', url: 'https://wallet.keplr.app/chains/akash?modal=validator&chain=akashnet-2&validator_address=akashvaloper1f2jpv5sc6ur6yurq5w0t2chphrznpy8l86yse9' },
+  { name: 'Stake JKL', url: 'https://ping.pub/jackal/staking/jklvaloper1s4rscs2jj7qydkkrsrc52rgvq38wwgrqdrcrdq' },
+  { name: 'Stake JUNOX', url: 'https://en.wikipedia.org/wiki/Rickrolling' },
+];
 ---
 
 <Layout
@@ -79,14 +86,29 @@ const builtWith = [
       <div class='col-span-2'>
         <Card color='#F9CB40'>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            What is Brutal Neta?
+            Stake With US
           </h2>
           <p class='poppins'>
-            Brutal Neta is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
+            You can contribute to NetaDAO operations by staking with one of our validators:<br /><br />
           </p>
+           <ul class='flex gap-4 flex-wrap'>
+            {
+              stakeWith.map((item) => (
+                <li>
+                  <Pill>
+                    <a
+                      class='sanchez'
+                      href={item.url}
+                      target='_blank'
+                      title={`Go to ${item.name}`}
+                    >
+                      {item.name}
+                    </a>
+                  </Pill>
+                </li>
+              ))
+            }
+          </ul>
         </Card>
       </div>
     </section>

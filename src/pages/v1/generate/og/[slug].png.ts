@@ -30,13 +30,13 @@ export const GET: APIRoute = async ({ params, props }) => {
       <div style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; filter: drop-shadow()">
         <div style="display: flex; justify-content: space-between;">
           <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <p style="font-size: 48px;">NetaDAØ</p>
-            <p style="font-size: 38px;">${title}</p>
+            <p style="font-size: 48px; color: white;">NetaDAØ</p>
+            <p style="font-size: 38px; color: white;">${title}</p>
           </div>
           <img src="https://nft.netadao.zone/_next/static/media/logo.2a40d3f2.png" width="200px" height="200px" />
         </div>
         <div style="display: flex;">
-          <p style="font-size: 24px;">${description}</p>
+          <p style="font-size: 24px; color: white;">${description}</p>
         </div>
       </div>
     </div>

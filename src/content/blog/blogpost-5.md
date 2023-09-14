@@ -7,7 +7,7 @@ tags:
   - JavaScript
   - Theme
 description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
-imgUrl: '../../assets/47.webp'
+imgUrl: '../../assets/48.webp'
 layout: "../../layouts/BlogPost.astro"
 ---
 

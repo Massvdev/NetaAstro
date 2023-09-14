@@ -16,7 +16,7 @@ export const GET: APIRoute = async () => {
   const link = 'https://neta-astro.vercel.app/';
   const html = toReactElement(`
   <div style="background-color: #0f0f0f; display: flex; flex-direction: column; height: 100%; padding: 3rem; width: 100%">
-    <div style="display:flex; height: 100%; width: 100%; background-color: #111827; border: 6px solid black; border-radius: 0.5rem; padding: 2rem; filter: drop-shadow(6px 6px 0 rgb(0 0 0 / 1));">
+    <div style="display:flex; height: 100%; width: 100%; background-color: #111827; border: 6px solid purple; border-radius: 0.5rem; padding: 2rem; filter: drop-shadow(6px 6px 0 rgb(0 0 0 / 1));">
       <div style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; filter: drop-shadow()">
         <div style="display: flex; flex-direction: column; gap: 0.75rem;">  
           <p style="font-size: 48px; color: white;">NetaDAØ</p>
@@ -24,7 +24,7 @@ export const GET: APIRoute = async () => {
           </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: -2rem;">
           <p style="font-size: 32px; color: white;">${link}</p>
-          <img src="https://nft.netadao.zone/_next/static/media/logo.2a40d3f2.png" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="https://nft.netadao.zone/_next/static/media/logo.2a40d3f2.png" width="200px" height="200px" />
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ const { post } = Astro.props;
   description={post.data.description}
 >
   <div class='flex justify-end my-4'>
-    <Button href={`/blog/${post.slug}/`}>
+    <Button color='#7d53de' href={`/blog/${post.slug}/`}>
     <p class='righteous'>
     Read post &rarr;
     </p>
@@ -28,13 +28,13 @@ const { post } = Astro.props;
   <div class='hidden sm:inline-block'>
     <p class='poppins mt-2'>tags:</p>
     <div class='flex justify-between items-center'>
-      <ul class='flex gap-4 mt-2'>
+      <ul class='flex flex-wrap gap-4 mt-2'>
         {
           post.data.tags.map((tag) => {
             return (
               <li>
                 <a class="righteous" href={`/blog/tags/${tag.toLowerCase()}/`}>
-                  <Pill>{tag}</Pill>
+                  <Pill color='#7d53de'>{tag}</Pill>
                 </a>
               </li>
             );

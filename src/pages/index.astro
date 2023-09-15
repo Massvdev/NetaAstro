@@ -12,6 +12,7 @@ const builtWith = [
   { name: 'Akash', url: 'https://akash.network/' },
   { name: 'Astro', url: 'https://astro.build/' },
   { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
+  { name: 'Brutal', url: 'https://brutal.elian.codes/' },
   { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
   {
     name: 'Sitemap',
@@ -51,7 +52,7 @@ const stakeWith = [
             <p class='outfit m-2 text-2xl md:text-3xl lg:text-4xl'>
               NetaDAO is a collective of Juno supporters organizing to accelerate the development and adoption of Juno Network and the Cosmos ecosystem at large.
             </p>
-            <Button target={'_self'} href='/blog/'>
+            <Button color='#B4DE53' target={'_self'} href='/blog/'>
               <p class='righteous'>
               Go to the NetaDAO blog &rarr;
               </p>
@@ -67,11 +68,11 @@ const stakeWith = [
           <p class='outfit text-xl md:text-2xl lg:text-2xl mb-4'>
             You can contribute to NetaDAO operations by staking with one of our validators:
           </p>
-           <ul class='flex gap-4 flex-wrap'>
+           <ul class='flex gap-4 flex-wrap justify-center'>
             {
               stakeWith.map((item) => (
                 <li>
-                  <Pill>
+                  <Pill color='#53DEC3'>
                     <a
                       class='righteous'
                       href={item.url}
@@ -92,11 +93,11 @@ const stakeWith = [
           <h2 class='text-2xl md:text-4xl outfit lg:text-5xl mb-8'>
             NetaDAO is built with
           </h2>
-          <ul class='flex gap-4 flex-wrap'>
+          <ul class='flex gap-4 flex-wrap justify-center'>
             {
               builtWith.map((item) => (
                 <li>
-                  <Pill>
+                  <Pill color='#DE536F'>
                     <a
                       class='righteous'
                       href={item.url}

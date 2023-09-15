@@ -20,7 +20,7 @@ export const GET: APIRoute = async () => {
       <div style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; filter: drop-shadow()">
         <div style="display: flex; flex-direction: column; gap: 0.75rem;">  
           <p style="font-size: 48px; color: white;">NetaDAØ</p>
-          <p style="font-size: 38px; color: white;">A Cosmos community collective</p>
+          <p style="font-size: 40px; color: white;">A Cosmos community collective</p>
           </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: -2rem;">
           <p style="font-size: 32px; color: white;">${link}</p>

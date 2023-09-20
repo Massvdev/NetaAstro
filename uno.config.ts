@@ -11,7 +11,9 @@ export default defineConfig({
     transformerDirectives(),
   ],
   presets: [
-    presetUno(),
+    presetUno({
+      dark: 'class'
+    }),
     presetIcons({
       collections: {
         logos: () =>

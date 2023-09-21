@@ -1,0 +1,29 @@
+import type { CollectionEntry } from 'astro:content';
+import Button from '@components/Button.astro';
+
+interface Props {
+  posts: CollectionEntry<'docs'>[];
+}
+const { posts } = Astro.props;
+const { post } = Astro.props;
+
+---
+
+<ul class='hidden lg:block sticky top-6'>
+  {
+    posts.map((post) => {
+      return (
+       
+        <div class='flex justify-end my-2'>
+    <li class='py-1'>
+      <a href={`/docs/${post.slug}/`}>
+    <p class='righteous hover:text-lime transition-all duration-150 ease-in-out text-stone-100'>
+    {post.data.title};
+    </p>
+    </a>
+    </li>
+  </div>
+      );
+    })
+  }
+</ul>

@@ -90,6 +90,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.dark {
+  background-image: linear-gradient(180deg, #1c182A, #08253A);
+  }
+
 :root {
   --color-bg: #f2f2f2;
   --color-text: #444444;

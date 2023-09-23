@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import ThemeIcon from '@components/ThemeIcon.astro';
 interface Props {
   pageTitle?: string;
 }
@@ -33,17 +34,17 @@ const socialIcons = [
 const { pageTitle } = Astro.props;
 ---
 
-<header class='border-b-4 border-black bg-gray-900 text-gray-100 flex justify-between p-6 items-center'>
+<header class='border-b-4 border-1 dark:rounded-99 border-black bg-gray-700 dark:bg-gradient-to-b from-fuchsia-950 to-cyan-950 text-gray-100 flex justify-between p-6 items-center'>
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
     <a href='/' title='Back to Home' class='flex Justify-normal gap-1 items-center'>
     <Image
-      src='https://nft.netadao.zone/_next/static/media/logo.2a40d3f2.png'
+      src='/neta240.png'
       alt="logo"
       width={100}
       height={100}
-      class='rounded h-12 w-12 object-cover'
+      class='rounded dark:rounded-99 h-12 w-12 object-cover'
     />
-    <p class='righteous md:text-5xl'>NetaDAØ</p>
+    <p class='righteous hover:text-#DE536F dark:hover:text-lime md:text-5xl'>NetaDAØ</p>
   </a>
   <nav class='hidden md:inline-block'>
     <h2 class='hidden'>Navigation</h2>
@@ -52,7 +53,7 @@ const { pageTitle } = Astro.props;
         navigationItems.map((item) => (
           <li>
             <a
-              class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'
+              class='text-lg font-medium hover:text-#DE536F dark:hover:text-lime hover:underline transition-all duration-150 ease-in-out'
               href={item.url}
               title={`Go to ${item.name}`}
             >
@@ -61,12 +62,13 @@ const { pageTitle } = Astro.props;
           </li>
         ))
       }
+      <li><ThemeIcon /></li>
       {
         socialIcons.map((item) => (
           <li>
             <a
               href={item.url}
-              class='hover:text-green hover:underline transition-all duration-150 ease-in-out'
+              class='hover:text-#DE536F dark:hover:text-lime hover:underline transition-all duration-150 ease-in-out'
               target='_blank'
               title={`'See @Neta_DAO on ${item.name}`}
             >
@@ -80,9 +82,9 @@ const { pageTitle } = Astro.props;
  <nav class='md:hidden flex'>
     <h2 class='hidden'>Mobile Navigation</h2>
     <ul class='flex gap-8 '>
-      <li><a href='/blog/' class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'>Blog</a></li>
-      <li><a href='https://daodao.zone/dao/juno1c5v6jkmre5xa9vf9aas6yxewc7aqmjy0rlkkyk4d88pnwuhclyhsrhhns6' class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'>DAO</a></li>
-      <li><a href='https://docs.netadao.zone/docs/faq/' class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'>FAQ</a></li>
+      <li><a href='/blog/' class='text-lg font-medium hover:text-lime hover:underline transition-all duration-150 ease-in-out'>Blog</a></li>
+      <li><a href='https://daodao.zone/dao/juno1c5v6jkmre5xa9vf9aas6yxewc7aqmjy0rlkkyk4d88pnwuhclyhsrhhns6' class='text-lg font-medium hover:text-lime hover:underline transition-all duration-150 ease-in-out'>DAO</a></li>
+      <li><a href='https://docs.netadao.zone/docs/faq/' class='text-lg font-medium hover:text-lime hover:underline transition-all duration-150 ease-in-out'>FAQ</a></li>
     </ul>
   </nav>
 </header>

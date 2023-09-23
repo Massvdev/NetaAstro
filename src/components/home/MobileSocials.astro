@@ -23,7 +23,7 @@ const socials = [
   <ul class='flex justify-between'>
     {
       socials.map((item) => (
-        <li class='bg-transparent px-4 py-2 text-green border-black border-2 rounded card-shadow'>
+        <li class='bg-gradient-to-br from-slate-600 via-gray-800 to-slate-900 px-4 py-2 text-gray-100 hover:text-#DE536F dark:hover:text-lime border-black border-2 border-b-3 border-r-3 rounded-5 card-shadow'>
           <a href={item.url} target='_blank' title={`Go to ${item.name}`}>
             <div class:list={[item.icon, 'p-6']} />
           </a>

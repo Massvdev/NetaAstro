@@ -1,13 +1,19 @@
 import {
   defineConfig,
   presetIcons,
-  presetWind,
+  presetUno,
   presetTypography,
+  transformerDirectives,
 } from 'unocss';
 
 export default defineConfig({
+  transformers: [
+    transformerDirectives(),
+  ],
   presets: [
-    presetWind(),
+    presetUno({
+      dark: 'class'
+    }),
     presetIcons({
       collections: {
         logos: () =>

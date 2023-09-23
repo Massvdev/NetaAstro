@@ -15,7 +15,7 @@ interface Props {
 const { title, description, classList, pageTitle, ogImage } = Astro.props;
 ---
 
-<html lang='en' class='bg-gradient-to-b from-#1c182A to-#08253A'>
+<html lang='en' class='bg-gradient-to-b from-gray-600 to-gray-400'>
   <BaseHead ogImage={ogImage} title={title} description={description} />
 
   <body class:list={[classList]}>

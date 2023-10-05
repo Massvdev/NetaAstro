@@ -18,7 +18,7 @@ const { post } = Astro.props;
   description={post.data.description}
 >
   <div class='flex justify-end my-4'>
-    <Button color='#7d53de' href={`/blog/${post.slug}/`}>
+    <Button color='#f87171' colord='#7d53de' href={`/blog/${post.slug}/`}>
     <p class='righteous'>
     Read post &rarr;
     </p>
@@ -34,7 +34,7 @@ const { post } = Astro.props;
             return (
               <li>
                 <a class="righteous" href={`/blog/tags/${tag.toLowerCase()}/`}>
-                  <Pill color='#7d53de'>{tag}</Pill>
+                  <Pill color='#f87171' colord='#7d53de'>{tag}</Pill>
                 </a>
               </li>
             );

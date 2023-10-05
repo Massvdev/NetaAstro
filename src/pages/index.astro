@@ -35,24 +35,24 @@ const stakeWith = [
   pageTitle='NetaDAO | Home'
   description='NetaDAO is a community accelerator program.'
 >
-  <main class='bg-slate-500 dark:bg-gradient-to-b from-cyan-950 to-purple-700 dark:rounded-10 border-b-4 border-1 border-black p-6'>
+  <main class='bg-#9F9A9E dark:bg-gradient-to-b from-cyan-950 to-purple-700 dark:rounded-10 border-b-4 border-1 border-black p-6'>
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 flex-auto gap-4 mt-4'>
       <h2 class='hidden'>About NetaDAO</h2>
       <div class='col-span-4 flex-col flex-wrap justify-between'>
-        <Card color='#7d53de'>
+        <Card color='#E7E5E8' colord='#7d53de'>
           <div class='flex flex-col justify-between items-start gap-4'>
             <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
               What is <a
-                class='text-white'
+                class='text-#ED2E35 dark:text-white righteous'
                 target='_blank'
-                href='https://daodao.zone/dao/juno1c5v6jkmre5xa9vf9aas6yxewc7aqmjy0rlkkyk4d88pnwuhclyhsrhhns6/proposals'>NetaDAO</a
+                href='https://daodao.zone/dao/juno1c5v6jkmre5xa9vf9aas6yxewc7aqmjy0rlkkyk4d88pnwuhclyhsrhhns6/proposals'>NetaDAØ</a
               >
             </p>
             <p class='outfit m-2 text-2xl md:text-3xl lg:text-4xl'>
               NetaDAO is a collective of Juno supporters organizing to accelerate the development and adoption of Juno Network and the Cosmos ecosystem at large.
             </p>
-            <Button color='#B4DE53' target={'_self'} href='/blog/'>
+            <Button color='#FF5757' colord='#B4DE53' target={'_self'} href='/blog/'>
               <p class='righteous'>
               Go to the NetaDAO blog &rarr;
               </p>
@@ -61,7 +61,7 @@ const stakeWith = [
         </Card>
       </div>
       <div class='col-span-2 flex-col flex-wrap justify-between'>
-        <Card color='#DE536F'>
+        <Card color='#E7E5E8' colord='#DE536F'>
           <h2 class='text-2xl md:text-4xl outfit lg:text-6xl mb-4'>
             Stake With US
           </h2>
@@ -72,7 +72,7 @@ const stakeWith = [
             {
               stakeWith.map((item) => (
                 <li>
-                  <Pill color='#53DEC3'>
+                  <Pill color='#FF5757' colord='#53DEC3'>
                     <a
                       class='righteous'
                       href={item.url}
@@ -89,7 +89,7 @@ const stakeWith = [
         </Card>
       </div>
       <div class='col-span-2 flex-col flex-wrap justify-between'>
-        <Card color='#53DEC3'>
+        <Card color='#E7E5E8' colord='#53DEC3'>
           <h2 class='text-2xl md:text-4xl outfit lg:text-5xl mb-8'>
             NetaDAO is built with
           </h2>
@@ -97,7 +97,7 @@ const stakeWith = [
             {
               builtWith.map((item) => (
                 <li>
-                  <Pill color='#DE536F'>
+                  <Pill color='#FF5757' colord='#DE536F'>
                     <a
                       class='righteous'
                       href={item.url}

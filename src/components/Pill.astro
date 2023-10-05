@@ -1,6 +1,7 @@
 ---
 interface Props {
   color?: string;
+  colord?: string;
 }
 import colors from '../config/colors.json';
 
@@ -8,11 +9,15 @@ if (Astro.props.color === undefined) {
   Astro.props.color =
     colors[Math.floor(Math.random() * colors.length)];
 }
+if (Astro.props.colord === undefined) {
+  Astro.props.colord =
+    colors[Math.floor(Math.random() * colors.length)];
+}
 
-const { color } = Astro.props;
+const { color, colord } = Astro.props;
 ---
 
-<style define:vars={{ color: color }}>
+<style define:vars={{ color: color, colord: colord}}>
   span.brutal-pill {
     filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
     user-select: none;
@@ -29,6 +34,10 @@ const { color } = Astro.props;
   span.brutal-pill:hover {
     filter: drop-shadow(3px 3px 0 rgb(0 0 0 / 1));
     background-color: var(--color);
+  }
+  html.dark span.brutal-pill:hover {
+    filter: drop-shadow(3px 3px 0 rgb(0 0 0 / 1));
+    background-color: var(--colord);
   }
 </style>
 

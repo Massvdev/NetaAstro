@@ -1,6 +1,7 @@
 ---
 interface Props {
   color?: string;
+  colord?: string;
 }
 import colors from '../config/colors.json';
 
@@ -8,15 +9,29 @@ if (Astro.props.color === undefined) {
   Astro.props.color =
     colors[Math.floor(Math.random() * colors.length)];
 }
+if (Astro.props.colord === undefined) {
+  Astro.props.colord =
+    colors[Math.floor(Math.random() * colors.length)];
+}
 
-const { color } = Astro.props;
+const { color, colord } = Astro.props;
 ---
 
-<style define:vars={{ color: color }}>
+<style define:vars={{ color: color, colord: colord}}>
   div.brutal-card {
     background-color: var(--color);
     border-radius: 1.5rem;
     border: 3px solid black;
+    filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
+    transition: all;
+    padding: 1rem;
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+  }
+  html.dark div.brutal-card {
+    background-color: var(--colord);
+    border-radius: 1.5rem;
+    border: 3x solid black;
     filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
     transition: all;
     padding: 1rem;

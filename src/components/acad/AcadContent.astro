@@ -1,0 +1,17 @@
+---
+interface Props {
+  content: any;
+}
+
+const { content } = Astro.props;
+---
+
+<article class='prose-dark-100 text-dark-400 dark:prose-light dark:text-light-200 w-sm md:w-prose md:prose poppins'>
+  <a href='/academy/' title='Back to academy'>&larr; Back to academy</a>
+  <p class='text-cyan-400 text-sm md:text-base'>
+    Published on {content.pubDate} by {content.author}
+  </p>
+  <slot />
+  <p class='text-red-500 dark:text-fuchsia-400'>Written by {content.author}</p>
+  <a href='/academy/' title='Back to academy'>&larr; Back to academy</a>
+</article>

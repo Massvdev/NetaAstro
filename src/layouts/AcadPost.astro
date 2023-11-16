@@ -1,0 +1,26 @@
+import Layout from './Basic.astro';
+import AcadSideBar from '@components/academy/AcadSideBar.astro';
+import AcadContent from '@components/academy/AcadContent.astro';
+import RecentAcadPosts from '@components/generic/RecentAcadPosts.astro';
+
+const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.svg`, Astro.url);
+
+const { content, headings } = Astro.props;
+const { title, description } = content;
+---
+
+<Layout
+  title={title as string}
+  description={description as string}
+  ogImage={ogImage}
+>
+  <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
+    <AcadSideBar headings={headings} />
+    <AcadContent content={content}>
+      <slot />
+    </AcadContent>
+  </main>
+  <section class='p-6'>
+    <RecentAcadPosts count={6} />
+  </section>
+</Layout>
